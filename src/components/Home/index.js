@@ -4,6 +4,7 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import Lotus from '../../assets/images/lotus.png'
+import TextSphere from '../TextSphere'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -60,6 +61,7 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
+        <TextSphere />
       </div>
 
       <Loader type="ball-scale-multiple" />
