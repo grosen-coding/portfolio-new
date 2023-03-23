@@ -33,7 +33,6 @@ const Portfolio = () => {
         <div>Portfolio Projects Coming Soon...</div>
       </div>
       <Loader type="ball-scale-multiple" />
-      {/* <Loader type="pacman" /> */}
     </>
   )
 }

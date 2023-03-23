@@ -11,7 +11,6 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
-import LotusLoader from '../LotusLoader'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -86,7 +85,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      {/* <LotusLoader /> */}
       <Loader type="ball-scale-multiple" />
     </>
   )
