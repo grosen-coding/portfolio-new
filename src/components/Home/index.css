@@ -38,11 +38,6 @@
   animation: fadeIn 1s 1.7s backwards;
   opacity: 0.6;
 }
-@media screen and (max-width: 768px) {
-  .home-page h1 {
-    font-size: 5rem;
-  }
-}
 .home-page img {
   margin-left: 20px;
   opacity: 0;
@@ -122,5 +117,45 @@ h2 {
     bottom: auto;
     left: 0;
     margin: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home-page {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 90%;
+  }
+  .home-page h1 {
+    font-size: 8rem;
+    margin-top: 40%;
+  }
+  .home-page h2 {
+    font-size: 16px;
+  }
+  .home-page .flat-button {
+    font-size: 12px;
+    letter-spacing: 3px;
+    padding: 10px 15px;
+    min-width: 150px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .home-page {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 90%;
+  }
+  .home-page h1 {
+    margin-top: 30%;
+    font-size: 5rem;
+  }
+  .home-page h2 {
+    font-size: 14px;
+  }
+  .home-page .flat-button {
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding: 10px 15px;
+    min-width: 150px;
   }
 }
