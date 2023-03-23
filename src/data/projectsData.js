@@ -1,10 +1,10 @@
-import Project1 from '../assets/images/project-1.jpg'
+import Project1 from '../assets/images/project-1.jpeg'
 
 const projectsData = [
   {
     id: 1,
     title: 'Project 1',
-    image: { Project1 },
+    image: 'https://via.placeholder.com/200x400',
     description: 'This is a description of Project 1.',
     url: 'https://example.com/project-1',
   },
