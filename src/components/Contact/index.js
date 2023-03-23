@@ -21,9 +21,9 @@ const Contact = () => {
     emailjs
       .sendForm(
         'service_wo9lv6o',
-        '"template_gpd0odv"',
+        'template_gpd0odv',
         form.current,
-        'WuwUwial6BNhAsnae'
+        'RRj2HtUlETzyyd2Ec'
       )
       .then(
         () => {

@@ -60,20 +60,22 @@
 }
 .contact-form .flat-button {
   color: #b6c199;
-  font-size: 11px;
+  font-size: 14px;
   letter-spacing: 3px;
   text-decoration: none;
   padding: 1rem 2rem;
   border: 1px solid #b6c199;
   border-radius: 4px;
   background: 0 0;
+  font-weight: 600;
   text-transform: uppercase;
   float: right;
   text-align: center;
   margin-right: 10px;
+  cursor: pointer;
 }
 .contact-form .flat-button:hover {
   background: #b6c199;
-  color: #eee;
+  color: #333;
   transition: 0.3s ease-in-out;
 }
