@@ -75,6 +75,12 @@ const Portfolio = () => {
             onActiveChange={handleActiveChange}
             letterClass={letterClass}
           />
+          <ProjectCard
+            project={projectsData[5]}
+            isActive={projectsData[5].id === currentActiveId}
+            onActiveChange={handleActiveChange}
+            letterClass={letterClass}
+          />
         </div>
       </div>
       <Loader type="ball-scale-multiple" />
