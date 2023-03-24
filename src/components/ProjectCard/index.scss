@@ -8,6 +8,48 @@
     margin: 0 10px;
     opacity: 0;
     animation: flyIn 1s ease forwards;
+            border-radius: 50px !important;
+            overflow: hidden;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.2);
+                transition: all 0.3s ease;
+                z-index: 1;
+                // opacity: 0;
+            }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.3s ease;
+        border-radius: 50px !important;
+        transform: scale(1.2);
+        backface-visibility: hidden;
+    }
+
+    &:hover {
+        img {
+            transform: scale(1);
+            transition: all 0.3s ease;
+            transition-delay: .2s;
+        }
+
+                                        &:hover:before {
+
+                                            background-color: rgba(0, 0, 0, 0);
+                                            transition: all 0.3s ease;
+
+                                            // opacity: 0;
+                                        }
+
+    }
 
     @keyframes flyIn {
         0% {
@@ -29,6 +71,7 @@
         width: 350px;
         box-shadow: 0 0 20px 5px #c79f7a;
         transition: 0.3s ease;
+        
     }
 
     .project-image {
@@ -53,10 +96,21 @@
         transition: all 0.3s ease;
 
         h3 {
-            font-size: 1.5rem;
+            font-size: 2.5rem;
+                        background-color: #333;
+                        padding: .2rem 1rem;
+                        border-radius: 5px;
+                color: #e2e2e2;
+                opacity: 0.9 !important;
+            font-family: 'Coolvetica', sans-serif;
+            letter-spacing: 2px;
+            font-weight: 400;
+            // text-shadow: 1px 1px 2px #ffffff;
+            
+            // font-size: 1.5rem;
             position: absolute;
             top: -100%;
-            opacity: 0;
+            // opacity: 0;
             transition: top 0.3s ease 2s, opacity 0.3s ease 2s;
         }
     }
@@ -66,27 +120,29 @@
         opacity: 1;
 
         h3 {
-            top: 10%;
+            top: 30%;
             opacity: 1;
         }
     }
 
     .view-btn {
         font-family: 'Coolvetica', sans-serif;
+        font-size: 1.8rem;
         background-color: #b6c199;
         color: #333;
-        border: none;
+        border: 2px solid #333;
         border-radius: 5px;
         padding: 15px 25px;
         cursor: pointer;
         position: absolute;
-        bottom: -100%;
+        // bottom: -100%;
         opacity: 0;
         transition: bottom 0.3s ease 0.3s, opacity 0.3s ease 2s;
+        z-index: 5;
 
         &:hover {
-            background-color: #e2e2e2;
-            color: #b6c199;
+            background-color: #c79f7a;
+            // color: #b6c199;
         }
     }
 

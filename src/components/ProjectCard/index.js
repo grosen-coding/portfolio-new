@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './index.scss'
+import AnimatedLetters from '../AnimatedLetters'
 
 const ProjectCard = ({ project, isActive, onActiveChange }) => {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -23,6 +24,18 @@ const ProjectCard = ({ project, isActive, onActiveChange }) => {
     setIsModalOpen(false)
   }
 
+  const [letterClass, setLetterClass] = useState('text-animate')
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLetterClass('text-animate-hover')
+    }, 5000)
+
+    return () => {
+      clearTimeout(timer)
+    }
+  })
+
   return (
     <>
       <div
@@ -37,7 +50,13 @@ const ProjectCard = ({ project, isActive, onActiveChange }) => {
         />
         {isActive && (
           <div className="project-info">
-            <h3>{project.title}</h3>
+            <h3>
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={project.title.split('')}
+                idx={project.id * 10}
+              />
+            </h3>
             <button className="view-btn" onClick={handleViewClick}>
               View Project
             </button>

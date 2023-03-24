@@ -49,26 +49,31 @@ const Portfolio = () => {
             project={projectsData[0]}
             isActive={projectsData[0].id === currentActiveId}
             onActiveChange={handleActiveChange}
+            letterClass={letterClass}
           />
           <ProjectCard
             project={projectsData[1]}
             isActive={projectsData[1].id === currentActiveId}
             onActiveChange={handleActiveChange}
+            letterClass={letterClass}
           />
           <ProjectCard
             project={projectsData[2]}
             isActive={projectsData[2].id === currentActiveId}
             onActiveChange={handleActiveChange}
+            letterClass={letterClass}
           />
           <ProjectCard
             project={projectsData[3]}
             isActive={projectsData[3].id === currentActiveId}
             onActiveChange={handleActiveChange}
+            letterClass={letterClass}
           />
           <ProjectCard
             project={projectsData[4]}
             isActive={projectsData[4].id === currentActiveId}
             onActiveChange={handleActiveChange}
+            letterClass={letterClass}
           />
         </div>
       </div>
