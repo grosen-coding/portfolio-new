@@ -9,13 +9,14 @@ import TextSphere from '../TextSphere'
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
-  const nameArray = ['g', 'a', 'r', 'y']
+  const nameArray = ['G', 'a', 'r', 'y']
   const jobArray = [
-    'w',
+    'W',
     'e',
     'b',
     ' ',
-    'd',
+    ' ',
+    'D',
     'e',
     'v',
     'e',
@@ -53,10 +54,10 @@ const Home = () => {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={jobArray}
-              idx={22}
+              idx={21}
             />
           </h1>
-          <h2>Front End Developer / Creative Designer</h2>
+          <h2>Front End Developer & Creative Designer </h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
