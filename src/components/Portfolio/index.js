@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import ProjectCard from '../ProjectCard'
-import projectsData from '../../data/projectsData'
+import projectsData from './projectsData.js'
 import './index.scss'
 
 const Portfolio = () => {
@@ -45,14 +45,31 @@ const Portfolio = () => {
           />
         </h1>
         <div className="portfolio-container" onMouseLeave={handleMouseLeave}>
-          {projectsData.map((project) => (
-            <ProjectCard
-              key={project.id}
-              project={project}
-              isActive={project.id === currentActiveId}
-              onActiveChange={handleActiveChange}
-            />
-          ))}
+          <ProjectCard
+            project={projectsData[0]}
+            isActive={projectsData[0].id === currentActiveId}
+            onActiveChange={handleActiveChange}
+          />
+          <ProjectCard
+            project={projectsData[1]}
+            isActive={projectsData[1].id === currentActiveId}
+            onActiveChange={handleActiveChange}
+          />
+          <ProjectCard
+            project={projectsData[2]}
+            isActive={projectsData[2].id === currentActiveId}
+            onActiveChange={handleActiveChange}
+          />
+          <ProjectCard
+            project={projectsData[3]}
+            isActive={projectsData[3].id === currentActiveId}
+            onActiveChange={handleActiveChange}
+          />
+          <ProjectCard
+            project={projectsData[4]}
+            isActive={projectsData[4].id === currentActiveId}
+            onActiveChange={handleActiveChange}
+          />
         </div>
       </div>
       <Loader type="ball-scale-multiple" />
