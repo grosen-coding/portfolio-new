@@ -98,13 +98,14 @@
         h3 {
             font-size: 2.5rem;
                         background-color: #333;
-                        padding: .2rem 1rem;
-                        border-radius: 5px;
+                        padding: .5rem 1.5rem;
+                        border-radius: 20px;
                 color: #e2e2e2;
                 opacity: 0.9 !important;
             font-family: 'Coolvetica', sans-serif;
             letter-spacing: 2px;
             font-weight: 400;
+            z-index: 10;
             // text-shadow: 1px 1px 2px #ffffff;
             
             // font-size: 1.5rem;
@@ -131,7 +132,7 @@
         background-color: #b6c199;
         color: #333;
         border: 2px solid #333;
-        border-radius: 5px;
+        border-radius: 20px;
         padding: 15px 25px;
         cursor: pointer;
         position: absolute;
