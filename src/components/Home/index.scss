@@ -12,6 +12,7 @@
     width: 30%;
     max-height: 90%;
     font-size: 3rem;
+    z-index: 50;
 
   }
 
@@ -90,6 +91,8 @@
     white-space: nowrap;
           transition: .3s ease-in-out;
           border-radius: 1rem;
+          position: relative;
+          z-index: 10;
 
     &:hover {
       background: #c79f7a;
