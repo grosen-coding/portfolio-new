@@ -5,11 +5,52 @@
   // margin-left: 10%;
   overflow: hidden;
 
+
+    h1 {
+      color: #c79f7a;
+      font-size: 7rem;
+      line-height: 1;
+      margin: 0;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+      position: relative;
+  
+      &:before {
+        content: '<h1>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #b6c199;
+        font-size: 22px;
+        position: absolute;
+        top: -20px;
+        left: 0;
+        animation: fadeIn 1s 1.7s backwards;
+        opacity: 0.6;
+      }
+  
+      &:after {
+        content: '</h1>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #b6c199;
+        font-size: 22px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        animation: fadeIn 1s 1.7s backwards;
+        opacity: 0.6;
+  
+        @media screen and (max-width: 1500px) {
+          bottom: -25px;
+          left: 0;
+        }
+      }
+    }
+    
+
     h2 {
         color: #8d8d8d;
         margin: 30px 0;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 2rem;
         font-family: sans-serif;
         letter-spacing: 3px;
         animation: fadeIn 1.5s 2s backwards;
@@ -29,62 +70,23 @@
     font-size: 3rem;
     z-index: 50;
 
-                @media screen and (max-width: 1400px) {
-                    width: 50%;
-                  }
-
-    @media screen and (max-width: 1080px) {
-      width: 100%;
-      left: 0;
-      top: -100px;
-      transform: none;
-      text-align: center;
-      padding: 0 20px;
-      box-sizing: border-box;
-      height: 100%;
+    @media screen and (max-width: 1400px) {
+      width: 50%;
     }
+
+    // @media screen and (max-width: 1080px) {
+    //   width: 100%;
+    //   left: 0;
+    //   top: -100px;
+    //   transform: none;
+    //   text-align: center;
+    //   padding: 0 20px;
+    //   box-sizing: border-box;
+    //   // height: calc(100vh - 80px);
+    // }
 
   }
 
-  h1 {
-    color: #c79f7a;
-    font-size: 8rem;
-    line-height: 1;
-    margin: 0;
-    font-family: 'Coolvetica';
-    font-weight: 400;
-    position: relative;
-    &:before {
-        content: '<h1>';
-        font-family: 'La Belle Aurore', cursive;
-        color: #b6c199;
-        font-size: 22px;
-        position: absolute;
-        top: -20px;
-        left: 0;
-        animation: fadeIn 1s 1.7s backwards;
-        opacity: 0.6;
-      }
-    
-      &:after {
-        content: '</h1>';
-        font-family: 'La Belle Aurore', cursive;
-        color: #b6c199;
-        font-size: 22px;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        animation: fadeIn 1s 1.7s backwards;
-        opacity: 0.6;
-
-        @media screen and (max-width: 1500px) {
-          bottom: -25px;
-          left: 0;
-        }
-      }
-    
-      
-    }
 
     
 
@@ -133,26 +135,28 @@
 
 
 @media screen and (max-width: 1200px) {
-  .tags,
-  .home-page h1:before,
-  .home-page h1:after {
-    display: none;
-  }
+
 
   .home-page .text-zone {
     position: initial;
     width: 100%;
+    height: calc(100vh - 80px);
     transform: none;
     padding: 10px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    margin-top: 180px;
+    align-items: center;
+
+    h1 {
+      font-size: 10rem;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 
-  .home-page {
-
-    display: block;
-    margin: 20px auto 0 auto;
-    width: 124px;
-  }
 
   .logo-container {
     position: relative;

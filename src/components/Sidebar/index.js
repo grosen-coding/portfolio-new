@@ -19,88 +19,94 @@ import { Link, NavLink } from 'react-router-dom'
 const Sidebar = () => {
   return (
     <div className="nav-bar">
-      <Link className="logo" to="/">
-        <img src={LogoS} alt="Logo" />
-        <h3>
-          <span>GSR</span>Coding
-        </h3>
-      </Link>
-      <nav>
-        <NavLink exact="true" activeClassName="active" to="/">
-          <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
-        </NavLink>
-        <NavLink activeClassName="active" className="about-link" to="/about">
-          <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
-        </NavLink>
-        <NavLink
-          activeClassName="active"
-          className="portfolio-link"
-          to="/portfolio"
-        >
-          <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
-        </NavLink>
-        <NavLink
-          activeClassName="active"
-          className="contact-link"
-          to="/contact"
-        >
-          <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
-        </NavLink>
-      </nav>
-      <ul className="social-icons">
-        <li>
-          <a
-            href="https://www.linkedin.com/in/gary-rosen-coding/"
-            target="_blank"
-            rel="noreferrer"
+      <div className="nav-bar-wrap">
+        <div className="nav-bar-logo">
+          <Link className="logo" to="/">
+            <img src={LogoS} alt="Logo" />
+            <h3>
+              <span>GSR</span>Coding
+            </h3>
+          </Link>
+        </div>
+        <nav>
+          <NavLink exact="true" activeClassName="active" to="/">
+            <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+          </NavLink>
+          <NavLink activeClassName="active" className="about-link" to="/about">
+            <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+          </NavLink>
+          <NavLink
+            activeClassName="active"
+            className="portfolio-link"
+            to="/portfolio"
           >
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              color="#c79f7a"
-              className="anchor-icon"
-            />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/grosen-coding"
-            target="_blank"
-            rel="noreferrer"
+            <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
+          </NavLink>
+          <NavLink
+            activeClassName="active"
+            className="contact-link"
+            to="/contact"
           >
-            <FontAwesomeIcon
-              icon={faGithub}
-              color="#c79f7a"
-              className="anchor-icon"
-            />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.youtube.com/@k9paws"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon
-              icon={faYoutube}
-              color="#c79f7a"
-              className="anchor-icon"
-            />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.instagram.com/k9paws.pet/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon
-              icon={faInstagram}
-              color="#c79f7a"
-              className="anchor-icon"
-            />
-          </a>
-        </li>
-      </ul>
+            <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+          </NavLink>
+        </nav>
+        {/* <div className="nav-bar-social"> */}
+        <ul className="social-icons">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/gary-rosen-coding/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                color="#c79f7a"
+                className="anchor-icon"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/grosen-coding"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faGithub}
+                color="#c79f7a"
+                className="anchor-icon"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/@k9paws"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <FontAwesomeIcon
+                icon={faYoutube}
+                color="#c79f7a"
+                className="anchor-icon"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/k9paws.pet/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <FontAwesomeIcon
+                icon={faInstagram}
+                color="#c79f7a"
+                className="anchor-icon"
+              />
+            </a>
+          </li>
+        </ul>
+        {/* </div> */}
+      </div>
     </div>
   )
 }
