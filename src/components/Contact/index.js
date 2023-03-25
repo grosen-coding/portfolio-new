@@ -5,6 +5,7 @@ import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import 'loaders.css/src/animations/ball-scale-multiple.scss'
+import EmailAnimation from '../emailAnimation'
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const form = useRef()
@@ -93,7 +94,9 @@ const Contact = () => {
             rel="noreferrer"
             href="mailto:gsrcoding@gmail.com"
           >
-            <h3>gsrcoding@gmail.com</h3>
+            <h3>
+              <EmailAnimation />
+            </h3>
           </a>
         </div>
       </div>

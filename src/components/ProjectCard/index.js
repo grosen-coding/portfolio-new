@@ -50,13 +50,7 @@ const ProjectCard = ({ project, isActive, onActiveChange }) => {
         />
         {isActive && (
           <div className="project-info">
-            <h3>
-              <AnimatedLetters
-                letterClass={letterClass}
-                strArray={project.title.split('')}
-                idx={project.id * 10}
-              />
-            </h3>
+            <h3>{project.title}</h3>
             <button className="view-btn" onClick={handleViewClick}>
               View Project
             </button>

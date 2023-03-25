@@ -1,7 +1,42 @@
 $primary-color: #b6c199;
 
+* {
+  box-sizing: border-box !important;
+  margin: 0 ;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+
+          @media screen and (max-width: 1500px) {
+              font-size: 50%;
+            }
+}
+
+body {
+  margin: 0;
+  font: 300 11px/1.4 'Helvetica Neue', sans-serif;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #2e3b2e;
+  overflow: hidden;
+  display: block;
+}
+
+p {
+  font-size: 1.7rem !important;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+a {
+  text-decoration: none;
+}
+
+
 @import 'animate.css';
-@import '~loaders.css/src/animations/pacman.scss';
 @import '~loaders.css/src/animations/ball-scale-multiple.scss';
 
 @font-face {

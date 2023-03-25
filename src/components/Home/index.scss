@@ -5,6 +5,20 @@
   // margin-left: 10%;
   overflow: hidden;
 
+    h2 {
+        color: #8d8d8d;
+        margin: 30px 0;
+        font-weight: 400;
+        font-size: 20px;
+        font-family: sans-serif;
+        letter-spacing: 3px;
+        animation: fadeIn 1s 1.8s backwards;
+                  @media screen and (max-width: 1500px) {
+                    margin-top: 50px;
+                      font-size: 70%;
+                    }
+      }
+
   .text-zone {
     position: absolute;
     left: 12%;
@@ -63,8 +77,8 @@
         animation: fadeIn 1s 1.7s backwards;
         opacity: 0.6;
 
-        @media screen and (max-width: 1400px) {
-          bottom: -22px;
+        @media screen and (max-width: 1500px) {
+          bottom: -25px;
           left: 0;
         }
       }
@@ -85,15 +99,7 @@
     }
   }
 
-  h2 {
-    color: #8d8d8d;
-    margin: 30px 0;
-    font-weight: 400;
-    font-size: 20px;
-    font-family: sans-serif;
-    letter-spacing: 3px;
-    animation: fadeIn 1s 1.8s backwards;
-  }
+
 
   .flat-button {
     color: #c79f7a;
