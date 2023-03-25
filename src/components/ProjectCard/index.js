@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import './index.scss'
-import AnimatedLetters from '../AnimatedLetters'
 
 const ProjectCard = ({ project, isActive, onActiveChange }) => {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -23,18 +22,6 @@ const ProjectCard = ({ project, isActive, onActiveChange }) => {
   const closeModal = () => {
     setIsModalOpen(false)
   }
-
-  const [letterClass, setLetterClass] = useState('text-animate')
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-
-    return () => {
-      clearTimeout(timer)
-    }
-  })
 
   return (
     <>
