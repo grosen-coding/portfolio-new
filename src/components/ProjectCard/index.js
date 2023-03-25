@@ -67,8 +67,8 @@ const ProjectCard = ({ project, isActive, onActiveChange }) => {
               <img src={project.image} alt={project.title} />
             </div>
             <div className="modal-right">
-              <h2>{project.title}</h2>
-              <p>{project.description}</p>
+              <h2 className="modal-title">{project.title}</h2>
+              <p className="modal-text">{project.description}</p>
               <a href={project.url} target="_blank" rel="noopener noreferrer">
                 Visit Project
               </a>
