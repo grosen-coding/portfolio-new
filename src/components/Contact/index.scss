@@ -1,5 +1,5 @@
 .contact-page {
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1150px) {
       // padding-left: 150px;
       padding: 180px 150px;
     }
@@ -100,6 +100,10 @@
   left: 50px;
   animation: fadeIn 1s 3.3s forwards;
   transition: .5s ease-in-out !important;
+
+@media screen and (max-width: 1150px) {
+    left: 0;
+  }
 
     :hover {
       color: #e2e2e2 !important;
