@@ -57,9 +57,14 @@
             right: 20%;
         }
 
-                                @media screen and (min-device-height: 800px) and (max-device-width: 1080px) and (orientation: portrait) {
-                                    top: 40%;
-                                    right: 28%;
+                @media screen and (min-device-height: 1024px) and (max-device-height: 1024px) and (orientation: portrait) {
+                    top: 40%;
+                    right: 30%;
+                }
+
+                                @media screen and (min-device-height: 820px) and (max-device-height: 820px) and (orientation: landscape) {
+                                    top: 10%;
+                                    right: 5%;
                                 }
 
 }

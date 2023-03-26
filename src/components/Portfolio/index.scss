@@ -35,7 +35,17 @@
                             padding-top: 250px;
                         }
 
-        
+                                                @media screen and (min-device-height: 800px) and (max-device-height: 809px) and (orientation: landscape) {
+                                                    position: relative !important;
+                                                    margin-top: -60px;
+                                                }
+
+                                                @media screen and (min-device-height: 768px) and (max-device-height: 820px) and (orientation: landscape) {
+                                                    padding-top: 100px !important;
+                                                }
+                                                                                @media screen and (min-device-height: 768px) and (max-device-height: 768px) and (orientation: landscape) {
+                                                                                    padding-top: 80px !important;
+                                                                                }
     }
 
     h1.page-title {
@@ -55,6 +65,10 @@
                 top: 180px;
                 left: 100px;
             }
+
+                        @media screen and (min-device-height: 768px) and (max-device-height: 768px) and (orientation: landscape) {
+                            top: 130px !important;
+                        }
     }
 }
 
