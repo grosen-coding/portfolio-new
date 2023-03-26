@@ -1,5 +1,4 @@
-/* Importing google font  */
-
+/* Importing google font */
 
 .tagcloud-container {
     opacity: 0;
@@ -8,35 +7,47 @@
     animation-duration: 3s;
     animation-delay: 3s;
     animation-fill-mode: forwards;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: transparent;
+    perspective: 1000px;
+
+    @media screen and (max-width: 1500px) {
+        right: 0;
+        top: 10%;
+    }
+
+    @media screen and (max-width: 1300px) {
         position: absolute;
-            top: 20%;
-            right: 0;
-            width: 50%;
-            height: 100%;
-            // display: flex;
-            // justify-content: flex-end;
-            // align-items: center;
-            background: transparent;
-            perspective: 1000px;
+        right: 30%;
+        top: 45%;
+    }
 
-            @media screen and (max-width: 1500px) {
-                right: 0;
-                top: 10%;
-            }
+    @media screen and (max-width: 769px) {
+        position: absolute;
+        right: 30%;
+        top: 40%;
+    }
 
-            @media screen and (max-width: 1300px) {
-                position: absolute;
-                right: 30%;
-                top: 45%;
-                // height: 100%;
-            }
+    @media screen and (min-height: 768px) {
 
-            @media screen and (max-width: 769px) {
-                position: absolute;
-                right: 30%;
-                top: 40%;
-                // height: 100%;
-            }
+    }
+
+    /* iPad landscape mode */
+    @media screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: landscape) {
+        /* Your styles for landscape mode */
+        top: 5%;
+        right: 5%;
+    }
+
+    /* iPad portrait mode */
+    @media screen and (min-device-width: 768px) and (max-device-width: 768px) and (orientation: portrait) {
+        /* Your styles for portrait mode */        right: 30%;
+        top: 42%;
+    }
 }
 
 @keyframes fadeInScale {
@@ -51,7 +62,7 @@
     }
 
     100% {
-        opacity: .7;
+        opacity: 0.7;
         transform: scale(1);
     }
 }
@@ -68,7 +79,7 @@
     perspective: 1000px;
 }
 
-/* Change color of each text in sphere on hover   */
+/* Change color of each text in sphere on hover */
 .tagcloud--item {
     color: #b6c199;
     text-transform: capitalize;

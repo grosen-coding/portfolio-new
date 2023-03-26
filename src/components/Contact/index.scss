@@ -3,6 +3,12 @@
       // padding-left: 150px;
       padding: 180px 150px;
     }
+
+@media screen and (min-device-width: 768px) and (max-device-width: 768px) and (orientation: portrait) {
+  /* Your styles for portrait mode */
+        padding: 160px 150px;
+}
+    
 }
 
 .loader-hidden {
