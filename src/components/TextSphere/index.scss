@@ -1,4 +1,3 @@
-/* Importing google font */
 
 .tagcloud-container {
     opacity: 0;
@@ -32,9 +31,14 @@
         top: 40%;
     }
 
-    @media screen and (min-height: 768px) {
+         /* Laptop screens */
+         @media screen and (min-width: 1024px) and (max-width: 1440px) {
+             /* Your styles for laptop screens */
+             top: 0;
+             right: 0;
+         }
 
-    }
+
 
     /* iPad landscape mode */
     @media screen and (min-device-width: 1024px) and (max-device-width: 1080px) and (orientation: landscape) {
@@ -48,6 +52,16 @@
         /* Your styles for portrait mode */        right: 30%;
         top: 42%;
     }
+        @media screen and (min-device-height: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+            top: 35%;
+            right: 20%;
+        }
+
+                                @media screen and (min-device-height: 800px) and (max-device-width: 1080px) and (orientation: portrait) {
+                                    top: 40%;
+                                    right: 28%;
+                                }
+
 }
 
 @keyframes fadeInScale {
