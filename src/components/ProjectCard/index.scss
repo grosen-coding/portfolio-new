@@ -224,6 +224,11 @@
      transform: scale(0);
      animation: scaleInBounceIn 0.7s ease-in-out forwards;
 
+     @media screen and (max-width: 1200px) {
+         width: 90%;
+         height: auto;
+     }
+
      @keyframes scaleInBounceIn {
          0% {
              transform: scale(0);
