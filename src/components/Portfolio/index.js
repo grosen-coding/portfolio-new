@@ -41,7 +41,7 @@ const Portfolio = () => {
           <AnimatedLetters
             letterClass={letterClass}
             strArray={'Featured Projects'.split('')}
-            idx={15}
+            idx={10}
           />
         </h1>
         <div className="portfolio-container" onMouseLeave={handleMouseLeave}>
