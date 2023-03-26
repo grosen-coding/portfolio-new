@@ -30,6 +30,13 @@
                 top: 45%;
                 // height: 100%;
             }
+
+            @media screen and (max-width: 769px) {
+                position: absolute;
+                right: 30%;
+                top: 40%;
+                // height: 100%;
+            }
 }
 
 @keyframes fadeInScale {

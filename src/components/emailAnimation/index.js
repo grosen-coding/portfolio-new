@@ -16,7 +16,7 @@ const EmailAnimation = () => {
     </span>
   ))
 
-  return <h3>{letters}</h3>
+  return <div className="email-animation">{letters}</div>
 }
 
 export default EmailAnimation

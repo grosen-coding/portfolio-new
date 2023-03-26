@@ -14,9 +14,15 @@ import {
   faEnvelope,
   faSuitcase,
 } from '@fortawesome/free-solid-svg-icons'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 
 const Sidebar = () => {
+  const location = useLocation()
+
+  const checkActive = (path) => {
+    return location.pathname === path ? 'active' : ''
+  }
+
   return (
     <div className="nav-bar">
       <div className="nav-bar-wrap">
@@ -29,28 +35,28 @@ const Sidebar = () => {
           </Link>
         </div>
         <nav>
-          <NavLink exact="true" activeClassName="active" to="/">
+          <NavLink exact="true" to="/" className={`${checkActive('/')}`}>
             <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
           </NavLink>
-          <NavLink activeClassName="active" className="about-link" to="/about">
+          <NavLink
+            className={`about-link ${checkActive('/about')}`}
+            to="/about"
+          >
             <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
           </NavLink>
           <NavLink
-            activeClassName="active"
-            className="portfolio-link"
+            className={`portfolio-link ${checkActive('/portfolio')}`}
             to="/portfolio"
           >
             <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
           </NavLink>
           <NavLink
-            activeClassName="active"
-            className="contact-link"
+            className={`contact-link ${checkActive('/contact')}`}
             to="/contact"
           >
             <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
           </NavLink>
         </nav>
-        {/* <div className="nav-bar-social"> */}
         <ul className="social-icons">
           <li>
             <a
@@ -105,7 +111,6 @@ const Sidebar = () => {
             </a>
           </li>
         </ul>
-        {/* </div> */}
       </div>
     </div>
   )
